@@ -1,0 +1,120 @@
+/* index2 page comment*/
+a {
+    text-decoration: none;
+    /* text-style: none; */
+    color: black;
+  }
+  
+.color{
+  background-image: linear-gradient(180deg, rgb(222, 235, 244), rgb(245, 223, 239));
+}
+nav{
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+text-align: center;
+
+}
+.feature{
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+ /*sign up page -->*/
+.form-control{
+    background-image: linear-gradient(360deg, rgb(243, 236, 236), rgb(231, 239, 242));
+  }
+  .form{
+    background-image: linear-gradient(360deg, rgb(198, 15, 15) rgb(25, 105, 186));
+  }
+  input#exampleInputEmail1 {
+    padding: .5rem;
+    background-color: #F0F0F0;
+    color: black;
+    position: relative;
+    left: 0rem;
+  }
+
+  input#exampleInputPassword1 {
+    padding: .5rem;
+    background-color: #F0F0F0;
+    color: black;
+    position: relative;
+    left: 0rem;
+  }
+  /* fitness page comment*/
+  .imge{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:40%;
+    border-radius: 15px ;
+    border-style: outset;
+    
+    
+  }
+  .card-body:hover{
+      background-color: rgb(197, 246, 246);
+  }
+  .nav-link active{
+     font-weight:10px ;
+     font-style: var();
+  }
+  .customer-imge{
+    border-radius: 20px;
+    height: 160px;
+     border-color: rgb(188, 231, 231);
+  }
+  .register{
+    height:800px;
+    width: 1500px;
+  }
+  .signup{
+        text-decoration: none;
+        padding: 14px 40px;
+        background-color:orangered;
+        color:black;
+        margin-left: 20px;
+        border-radius: 22px;
+        border-style:none;
+        text-align: center;
+        width:50px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+  }
+  .Register{
+    text-decoration: none;
+    padding: 14px 40px;
+    background-color:orangered;
+    color:black;
+    margin: 10px;
+    border-radius: 22px;
+    border-style:none;
+    text-align: center;
+    width:50px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.button{
+  text-align:center;
+  text-decoration: none;
+}
+.button a{
+  text-decoration: none;
+}
+
+
+/* -------------- */
+
+  /* .bg-img-1{
+  background-image:url("https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3ltfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  }
+  .bg-img-2{
+  background-image:url("https://images.unsplash.com/photo-1593079831268-3381b0db4a77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGd5bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+  }
+  .bg-img-3{
+  background-image:url("https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxzZWFyY2h8MXx8Z3ltfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  } */
+  .carousel-image{
+  height:75vh;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  }
+

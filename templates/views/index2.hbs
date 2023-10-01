@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+      .bg-img-1{
+  background-image:url("https://img.freepik.com/free-photo/woman-stretching-gym_23-2148024319.jpg?w=1060&t=st=1679512487~exp=1679513087~hmac=5789c7fdcb698a2cb6dff2f05ad99f181f78ee26efe77a3f7f6603376430d257");
+  }
+  .bg-img-2{
+  background-image:url("https://img.freepik.com/free-photo/people-working-out-indoors-together-with-dumbbells_23-2149175410.jpg?w=1060&t=st=1679512288~exp=1679512888~hmac=2eedea0cf59a6849f1bfbff725e5884a08e47aaa6477e6ccc8ce79769e85d6d1");
+  }
+  .bg-img-3{
+  background-image:url("https://img.freepik.com/free-photo/athletic-man-woman-with-dumbbells-training-practicing-gym_155003-13045.jpg?w=1060&t=st=1679512403~exp=1679513003~hmac=5a8e751a44fdae82d0427c02fbc38584b4b4cf1fcb2938feb2003b2d22f56316");
+  }
+  .carousel-image{
+  height:75vh;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="../../public/project.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"
+></script>
+  </head>
+
+<body>
+  {{>navbar}}
+
+
+
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Get Stronger!</strong> You should check in on some of those fields below.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active carousel-image bg-img-1" data-bs-interval="1000">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+      {{!-- <img src="https://media.istockphoto.com/id/1002863304/photo/increasing-back-shoulder-and-arm-strength.jpg?b=1&s=170667a&w=0&k=20&c=UcQ3PsJUOMVy4TY9tClwnThlkLPk--x1oNDGyOIRC5I=" class="rounded mx-auto img-fluid img-thumbnail max-width:100% d-block w-80" alt="..."> --}}
+    </div>
+    <div class="carousel-item carousel-image bg-img-2" data-bs-interval="1000">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+      {{!-- <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGd5bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="rounded mx-auto img-fluid img-thumbnail  max-width:100% d-block w-80" alt="..."> --}}
+    </div>
+    <div class="carousel-item carousel-image bg-img-3">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+      {{!-- <img src="https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxzZWFyY2h8MXx8Z3ltfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="rounded mx-auto img-fluid img-thumbnail  max-width:100% d-block w-80" alt="..."> --}}
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<br>
+<br>
+<div class="row row-cols-1 row-cols-md-3 g-3">
+  <div class="col pl-5">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8NDAwKjQwMCUyMGd5bSUyMHJlbGF0ZWR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Dumbell</h5>
+        <p class="card-text">free weights, are a type of exercise equipment that do not require the use of exercise machines. Dumbbells are used to strengthen and tone muscles. Fixed weight: Dumbbells that are made with cast iron and coated with rubber or neoprene.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1623874514711-0f321325f318?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8NDAwKjQwMCUyMGd5bSUyMHJyZWxhdGVkfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Gym Area</h5>
+        <p class="card-text">A gym is a large room, usually containing special equipment, where people go to do physical exercise and get fit. The gym has exercise bikes and running machines. While some guests play golf, others work out in the hotel gym. </p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1556817411-31ae72fa3ea0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHNwb3J0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Weight Lifting</h5>
+        <p class="card-text">Building stronger muscles isn’t just about vanity, either. According to the Mayo Clinic, strength training not only helps with weight control, but also stops bone loss and can even build new bone and provide the benefit.
+ </p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<div class="container py-3">
+  <header>
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h4 class="display-7 fw-normal">MEMBERSHIP DETAILS</h4>
+	  <hr>
+      <p class="fs-5 text-muted">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">1 Month</h4>
+          </div>
+          <div class="card-body bg-dark">
+            <h1 class="card-title pricing-card-title"><small class="text-muted bg dark">500/-</small></h1>
+           <a href="/payment"> <button type="button" class="w-100 btn btn-lg btn-outline-secondary">Start Now</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">3 Month</h4>
+          </div>
+          <div class="card-body bg-dark">
+            <h1 class="card-title pricing-card-title"><small class="text-muted bg-dark">1000/-</small></h1>
+               <a href="/payment"><button type="button" class="w-100 btn btn-lg btn-outline-secondary">Start Now</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 ">
+            <h4 class="my-0 fw-normal">1 Year</h4>
+          </div>
+          <div class="card-body bg-dark">
+            <h1 class="card-title pricing-card-title"><small class="text-muted bg-dark">3000/-</small></h1>
+              <a href="/payment"> <button type="button" class="w-100 btn btn-lg btn-outline-secondary">Start Now</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <br>
+  <br>
+  <hr>
+  {{>footer}}
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>

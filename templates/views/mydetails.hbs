@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{!-- {{>header}} --}}
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+</head> --}}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+<body>
+    {{>navbar2}}
+    
+    <section class="vh-100" style="background-color: #85a3df;">
+       
+  <div class="container py-5 h-100 ">
+    <div class="row d-flex justify-content-center align-items-center h-100 mt-5 mb-5">
+      <div class="col col-lg-6 mb-4 mb-lg-0">
+        <div class="card mb-3" style="border-radius: .5rem;">
+          <div class="row g-0">
+            <div class="col-md-4 gradient-custom text-center text-white"
+              style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;background: radial-gradient(circle at 10% 20%, rgb(253, 203, 50) 0%, rgb(244, 56, 98) 100.2%);;">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                alt="Avatar" class="img-fluid my-5" style="width: 80px;" />
+              <h5><strong style="color: black;">{{sampleData.trainer}},</strong></h5>
+              <h6>My Trainer</h6>
+              {{!-- <i class="far fa-edit mb-5" ></i> --}}
+            </div>
+            <div class="col-md-8">
+              <div class="card-body p-4">
+                <h5> My Details</h5>
+                <hr class="mt-0 mb-4">
+                <div class="row pt-1">
+                  <div class="col-6 mb-3">
+                    <h6>First-Name</h6>
+                    <p class="text-muted">{{sampleData.firstname}}</p>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <h6>Last-Name</h6>
+                    <p class="text-muted">{{sampleData.lastname}}</p>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <h6>Phone</h6>
+                    <p class="text-muted">+91 {{sampleData.phone}}</p>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <h6>age</h6>
+                    <p class="text-muted">{{sampleData.age}}</p>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <h6>Subscription-Date</h6>
+                    {{!-- <p class="text-muted">ex.01-01-2012</p> --}}
+                    <p class="text-muted">{{subdetails.time}}</p>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <h6>Validity</h6>
+                    <p class="text-muted">{{subdetails.validity}}</p>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <h6>Your Slot</h6>
+                    <p class="text-muted"><strong style="color: black;">{{sampleData.slot}} Slot <a class="pe-auto"> <i class="far fa-edit mb-5 " data-bs-toggle="modal" data-bs-target="#exampleModal"></i></a></strong></p>
+                    
+                  </div>
+
+                    {{!-- <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> --}}
+
+<!-- Modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+     <form action="/slotchange" method="POST">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+     
+      <div class="modal-body">
+         <div class="form-group">
+                                        <div class="maxl">
+                                            <label class="radio inline">
+                                                <input type="radio" name="slot" value="morning" checked>
+                                                <span> Morning</span>
+                                            </label>
+                                            <label class="radio inline">
+                                                <input type="radio" name="slot" value="evening">
+                                                <span>Evening Slot</span>
+                                            </label>
+                                            {{!-- <div>{{}}</div> --}}
+                                        </div>
+                                    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>
+ 
+
+                {{!-- </div>
+                <h6>Projects</h6>
+                <hr class="mt-0 mb-4">
+                <div class="row pt-1">
+                  <div class="col-6 mb-3">
+                    <h6>Recent</h6>
+                    <p class="text-muted">Lorem ipsum</p>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <h6>Most Viewed</h6>
+                    <p class="text-muted">Dolor sit amet</p>
+                  </div>
+                </div>  --}}
+
+
+                {{!-- <div class="d-flex justify-content-start">
+                  <a href="#!"><i class="fab fa-facebook-f fa-lg me-3"></i></a>
+                  <a href="#!"><i class="fab fa-twitter fa-lg me-3"></i></a>
+                  <a href="#!"><i class="fab fa-instagram fa-lg"></i></a>
+                </div> --}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+</section>
+<br>
+<br>
+<br>
+<hr style="height: 3px; color:black">
+
+
+
+
+    {{!-- {{>footer}}   --}}
+</body>
+</html>

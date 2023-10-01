@@ -7,7 +7,7 @@ const hbs = require("hbs");
 require("./db/conn");
 const Register = require("./models/registers");
 const Payment = require("./models/payments");
-// const { Console } = require("console");
+// const { Console } = require("console1");
 
 const port = process.env.PORT || 3000;
 
